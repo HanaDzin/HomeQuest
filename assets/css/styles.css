@@ -324,3 +324,105 @@ button {
   box-shadow: 0 16px 32px hsla(228, 66%, 25%, .15);
 }
 
+/************************************** Change the background header ***************************************/
+.scroll-header {
+  background-color: var(--body-color);
+  box-shadow: 0 1px 4px hsla(228, 4%, 15%, .1);
+}
+
+.scroll-header .nav-logo {
+  color: var(--first-color);
+}
+
+/************************************** Logos Section ****************************************************/
+.logos-container {
+  padding-top: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem 2rem;
+  justify-items: center;
+}
+
+.logos-img img {
+  height: 60px;
+  opacity: .3;
+  transition: .3s;
+}
+
+.logos-img img:hover {
+  opacity: .8;
+}
+
+/********************************* Popular Section ******************************************/
+.popular-container {
+  padding: 1rem 0 5rem;
+}
+
+.popular-card {
+  width: 290px;
+  background-color: var(--container-color);
+  padding: .5rem .5rem 1.5rem;
+  border-radius: 1rem;
+  margin: 0 auto;
+  transition: .4s;
+}
+
+.popular-card:hover {
+  box-shadow: 0 12px 16px hsla(228, 66%, 45%, .1);
+}
+
+.popular-img {
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.popular.data {
+  padding: 0 1rem 0 0.5rem;
+}
+
+.popular-price {
+  font-size: var(--h2-font-size);
+  color: var(--text-color);
+}
+
+.popular-price span {
+  color: var(--second-color);
+}
+
+.popular-title {
+  font-size: var(--h3-font-size);
+  margin-bottom: .75rem;
+}
+
+.popular-description {
+  font-size: var(--small-font-size);
+}
+
+/******************************** Swiper *********************************/
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: '';
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  bottom: 0;
+  top: initial;
+  width: initial;
+  height: initial;
+  background-color: var(--container-color);
+  border: 2px solid var(--text-color-light);
+  padding: 6px;
+  border-radius: .5rem;
+  font-size: 1.5rem;
+  color: var(--first-color);
+}
+
+.swiper-button-prev {
+  left: calc(50% - 3rem);
+}
+
+.swiper-button-next {
+  right: calc(50% - 3rem);
+}
+

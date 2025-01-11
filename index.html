@@ -17,6 +17,9 @@
       rel="stylesheet"
     />
 
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/styles.css" />
 
@@ -121,10 +124,91 @@
       </section>
 
       <!-- LOGOS -->
-      <section class="logos section"></section>
+      <section class="logos section">
+        <div class="logos-container container grid">
+          <div class="logos-img">
+            <img src="assets/img/logo1.png" alt="logo 1" />
+          </div>
+          <div class="logos-img">
+            <img src="assets/img/logo2.png" alt="logo 2" />
+          </div>
+          <div class="logos-img">
+            <img src="assets/img/logo3.png" alt="logo 3" />
+          </div>
+          <div class="logos-img">
+            <img src="assets/img/logo4.png" alt="logo 4" />
+          </div>
+        </div>
+      </section>
 
       <!-- POPULAR -->
-      <section class="section" id="popular"></section>
+      <section class="section" id="popular">
+        <div class="container">
+          <span class="section-subtitle">Currently Trending</span>
+          <h2 class="section-title">Popular Residences</h2>
+
+          <div class="popular-container swiper">
+            <div class="swiper-wrapper">
+              <article class="popular-card swiper-slide">
+                <img src="assets/img/popular1.jpg" alt="" class="popular-img" />
+                <div class="popular-data">
+                  <h2 class="popular-price"><span>$</span>66,356</h2>
+                  <h3 class="popular-title">Luxury Villa</h3>
+                  <p class="popular-description">
+                    The Flower Street, New York, USA
+                  </p>
+                </div>
+              </article>
+              <article class="popular-card swiper-slide">
+                <img src="assets/img/popular2.jpg" alt="" class="popular-img" />
+                <div class="popular-data">
+                  <h2 class="popular-price"><span>$</span>35,159</h2>
+                  <h3 class="popular-title">Exotic Mansion</h3>
+                  <p class="popular-description">
+                    The Flower Street, New York, USA
+                  </p>
+                </div>
+              </article>
+              <article class="popular-card swiper-slide">
+                <img src="assets/img/popular3.jpg" alt="" class="popular-img" />
+                <div class="popular-data">
+                  <h2 class="popular-price"><span>$</span>75,043</h2>
+                  <h3 class="popular-title">Modern Apartments</h3>
+                  <p class="popular-description">
+                    The Flower Street, New York, USA
+                  </p>
+                </div>
+              </article>
+              <article class="popular-card swiper-slide">
+                <img src="assets/img/popular4.jpg" alt="" class="popular-img" />
+                <div class="popular-data">
+                  <h2 class="popular-price"><span>$</span>47,043</h2>
+                  <h3 class="popular-title">Spacious Mansion</h3>
+                  <p class="popular-description">
+                    The Flower Street, New York, USA
+                  </p>
+                </div>
+              </article>
+              <article class="popular-card swiper-slide">
+                <img src="assets/img/popular5.jpg" alt="" class="popular-img" />
+                <div class="popular-data">
+                  <h2 class="popular-price"><span>$</span>112,047</h2>
+                  <h3 class="popular-title">Sunny Villa</h3>
+                  <p class="popular-description">
+                    The Flower Street, New York, USA
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-button-next">
+              <i class="bx bx-chevron-right"></i>
+            </div>
+            <div class="swiper-button-prev">
+              <i class="bx bx-chevron-left"></i>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- VALUE -->
       <section class="value section" id="value"></section>
@@ -138,6 +222,9 @@
 
     <!-- FOOTER -->
     <footer class="footer section"></footer>
+
+    <!-- SWIPER -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
 
     <!-- MAIN JS -->
     <script src="assets/js/main.js"></script>
