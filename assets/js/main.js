@@ -1,4 +1,5 @@
 /*=============== CHANGE BACKGROUND HEADER ===============*/
+
 const scrollHeader = () => {
   const header = document.getElementById("header");
   // Add a class if the bottom offset is greater than 50 of the viewport
@@ -9,6 +10,7 @@ const scrollHeader = () => {
 window.addEventListener("scroll", scrollHeader);
 
 /*=============== SWIPER POPULAR ===============*/
+
 var swiper = new Swiper(".popular-container", {
   spaceBetween: 32,
   grabCursor: true,
@@ -21,7 +23,30 @@ var swiper = new Swiper(".popular-container", {
   },
 });
 
-/*=============== VALUE ACCORDION ===============*/
+/* =============== FAQ CLICK TOGGLE =============== */
+
+const accordionItems = document.querySelectorAll(".faq-accordion-item");
+accordionItems.forEach((item) => {
+  const accordionHeader = item.querySelector(".faq-accordion-header");
+  accordionHeader.addEventListener("click", () => {
+    const openItem = document.querySelector(".accordion-open");
+    toggleItem(item);
+    if (openItem && openItem !== item) {
+      toggleItem(openItem);
+    }
+  });
+});
+const toggleItem = (item) => {
+  const accordionContent = item.querySelector(".faq-accordion-content");
+
+  if (item.classList.contains("accordion-open")) {
+    accordionContent.removeAttribute("style");
+    item.classList.remove("accordion-open");
+  } else {
+    accordionContent.style.height = accordionContent.scrollHeight + "px";
+    item.classList.add("accordion-open");
+  }
+};
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 
